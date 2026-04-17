@@ -82,18 +82,16 @@ export default function Hero() {
           </div>
 
           <div className="relative fade-up" style={{ animationDelay: "0.2s" }}>
-            <div className="relative aspect-[9/16] max-w-sm mx-auto">
-              <div className="absolute inset-0 bg-black rounded-[3rem] rotate-6 opacity-30 blur-2xl" />
-              <div className="relative bg-[#C8102E] rounded-[3rem] shadow-2xl overflow-hidden border-4 border-white/90">
-                <div className="relative aspect-[9/16]">
-                  <img
-                    src="/henrys-logo.jpg"
-                    alt="Henry's Burger & Beer"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
+            <div className="relative aspect-square max-w-xs mx-auto">
+              <div className="absolute inset-0 bg-black rounded-3xl rotate-6 opacity-30 blur-2xl" />
+              <div className="relative bg-[#C8102E] rounded-3xl shadow-2xl overflow-hidden border-4 border-white/90 aspect-square">
+                <img
+                  src="/henrys-logo.jpg"
+                  alt="Henry's Burger & Beer"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
-              <div className="absolute -top-4 -right-4 bg-black text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider rotate-12 shadow-xl">
+              <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider rotate-12 shadow-xl">
                 Ex Guri!
               </div>
             </div>
