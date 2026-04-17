@@ -2,17 +2,26 @@ import { Phone, MapPin } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#C8102E]">
+    <section className="relative overflow-hidden bg-[#8B0A1F]">
       <div className="absolute inset-0 -z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#8B0A1F] via-[#C8102E] to-[#8B0A1F]" />
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 20px)",
-          }}
+        <video
+          src="/hero-video-mobile.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover lg:hidden"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
+        <video
+          src="/hero-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
+        />
+        <div className="absolute inset-0 bg-[#8B0A1F]/55 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-32 pb-20 md:pt-40 md:pb-32">
